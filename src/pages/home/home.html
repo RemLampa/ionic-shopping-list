@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Shopping List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="showItem(item)">
+      {{ item }}
+    </button>
+  </ion-list>
+</ion-content>
+
+<ion-footer no-padding>
+  <button ion-button full (click)="addItem()">Add Item</button>
+</ion-footer>
